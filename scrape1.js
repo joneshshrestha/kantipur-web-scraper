@@ -4,13 +4,11 @@ let cheerio = require('cheerio')
 let express = require('express')
 let app = express()
 
-let link;
-
-app.get('/', (req, res) => {
-    res.render('index', {
-        title: 'Homepage'
-      });
-  })
+// app.get('/', (req, res) => {
+//     res.render('index', {
+//         title: 'Homepage'
+//       });
+//   })
    
 app.listen(3000)
 
@@ -30,11 +28,17 @@ request('https://www.kantipurdaily.com/news', (error, response, html) => {
             let heading = $(el)
                 .find('p')
                 .text()
-            //console.log(title)
-            //console.log(link) 
+            console.log(title)
+            console.log(link) 
             console.log(heading)
             console.log('\n')
+            app.get('/', (req, res) => {
+                res.render('index', {
+                    title: title,
+                    link: link,
+                    heading: heading
+                });
+            })
         })
     }
 })
-console.log(link)
