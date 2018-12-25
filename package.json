@@ -19,6 +19,8 @@
   "homepage": "https://github.com/joneshshrestha/webScrapping#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
     "request": "^2.88.0"
   }
 }
