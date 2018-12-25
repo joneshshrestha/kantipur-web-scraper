@@ -15,7 +15,9 @@ request('https://www.kantipurdaily.com/news', (error, response, html) => {
             let heading = $(el)
                 .find('p')
                 .text()
-            console.log(title, link, heading) 
+            console.log(title) 
+            console.log(link) 
+            console.log(heading) 
         })
     }
 })
