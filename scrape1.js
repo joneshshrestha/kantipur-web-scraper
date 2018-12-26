@@ -3,12 +3,6 @@ let request = require('request')
 let cheerio = require('cheerio')
 let express = require('express')
 let app = express()
-
-// app.get('/', (req, res) => {
-//     res.render('index', {
-//         title: 'Homepage'
-//       });
-//   })
    
 app.listen(3000)
 
@@ -37,7 +31,7 @@ request('https://www.kantipurdaily.com/news', (error, response, html) => {
                     title: title,
                     link: link,
                     heading: heading
-                });
+                })
             })
         })
     }
