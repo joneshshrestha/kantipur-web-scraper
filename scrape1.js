@@ -3,6 +3,7 @@ let request = require('request')
 let cheerio = require('cheerio')
 let express = require('express')
 let app = express()
+let array
    
 app.listen(3000)
 
@@ -22,17 +23,20 @@ request('https://www.kantipurdaily.com/news', (error, response, html) => {
             let heading = $(el)
                 .find('p')
                 .text()
-            console.log(title)
+            array = [title]
+            console.log(array)
             console.log(link) 
             console.log(heading)
             console.log('\n')
-            app.get('/', (req, res) => {
-                res.render('index', {
-                    title: title,
-                    link: link,
-                    heading: heading
-                })
-            })
         })
     }
 })
+
+app.get('/', (req, res) => {
+    res.render('index', {
+        title: array,
+        // link: link,
+        // heading: heading
+    })
+})
+
