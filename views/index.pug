@@ -8,7 +8,10 @@ html(lang="en")
     body
         h1 Kantipur News Update
         for n in news
-            p=n.title
+            h3=n.title
+            i=n.heading
+            br
+            a(href= 'https://www.kantipurdaily.com/')=n.link
         //- p #{title} 
         //- br
         //- p #{heading}
