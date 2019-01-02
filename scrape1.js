@@ -32,9 +32,11 @@ const getNews = (callback) => {
 app.get('/', (req, res) => {
     getNews(news => {
         res.render('index', {
-            title: news 
+            news 
         })
     })
 })
 
-app.listen(3000)
+app.listen(3000, () => {
+    console.log('Listening at port 3000')
+})

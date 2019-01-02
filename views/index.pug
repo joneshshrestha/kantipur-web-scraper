@@ -7,7 +7,9 @@ html(lang="en")
         title Kantipur News
     body
         h1 Kantipur News Update
-        p #{title} 
+        for n in news
+            p=n.title
+        //- p #{title} 
         //- br
         //- p #{heading}
         //- a(href= 'https://www.kantipurdaily.com/#{link}') #{link}
