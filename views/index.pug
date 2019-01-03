@@ -1,18 +1,24 @@
 doctype html
 html(lang="en")
     head
+        style(type='text/css')
+            include design.css
         meta(charset="UTF-8")
         meta(name="viewport", content="width=, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Kantipur News
     body
-        h1 Kantipur News Update
+        ul#nav
+            li
+                a(href='#') नेपाली
+            li
+                a(href='#') English
+        br
+        br
+        h1(align='center') Kantipur News Update
         for n in news
             h3=n.title
             i=n.heading
             br
+            br
             a(href= 'https://www.kantipurdaily.com/')=n.link
-        //- p #{title} 
-        //- br
-        //- p #{heading}
-        //- a(href= 'https://www.kantipurdaily.com/#{link}') #{link}

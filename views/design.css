@@ -1,0 +1,16 @@
+#nav {
+    width:450px;
+    margin:0 auto;
+    list-style:none;
+    }
+    #nav li {
+    float:left;
+    }
+    #nav a {
+    display:block;
+    text-align:center;
+    width:150px; /* fixed width */
+    text-decoration:none; 
+    font-size: 25px;
+    font-weight: 900;
+    }
