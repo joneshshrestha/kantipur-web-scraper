@@ -17,8 +17,6 @@ html(lang="en")
         br
         h1(align='center') Kantipur News Update
         for n in news
-            h3=n.title
+            h3: a(href='https://www.kantipurdaily.com' + n.link)=n.title
             i=n.heading
             br
-            br
-            a(href= 'https://www.kantipurdaily.com/')=n.link
