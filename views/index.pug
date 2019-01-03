@@ -8,14 +8,14 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Kantipur News
     body
-        ul#nav
-            li
-                a(href='#') नेपाली
-            li
-                a(href='#') English
-        br
-        br
-        h1(align='center') Kantipur News Update
+        //- ul#nav
+        //-     li
+        //-         a(href='#') नेपाली
+        //-     li
+        //-         a(href='#') English
+        //- br
+        //- br
+        h1(align='center') कान्तिपुर समाचार अप्डेट
         for n in news
             h3: a(href='https://www.kantipurdaily.com' + n.link)=n.title
             i=n.heading
