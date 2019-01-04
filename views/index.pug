@@ -17,6 +17,7 @@ html(lang="en")
         //- br
         h1(align='center') कान्तिपुर समाचार अप्डेट
         for n in news
-            h3: a(href='https://www.kantipurdaily.com' + n.link)=n.title
-            i=n.heading
-            br
+            div
+                h2: a(href='https://www.kantipurdaily.com' + n.link target='_blank')=n.title
+                i=n.heading
+                br

@@ -20,3 +20,14 @@ a {
     text-decoration: none;
     color: #494949
 }
+
+i {
+    font-size: 18px;
+}
+
+div {
+    width: 1230px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+  }
