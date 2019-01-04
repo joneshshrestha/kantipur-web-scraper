@@ -17,7 +17,13 @@ html(lang="en")
         //- br
         h1(align='center') कान्तिपुर समाचार अप्डेट
         for n in news
-            div
-                h2: a(href='https://www.kantipurdaily.com' + n.link target='_blank')=n.title
+            div: a(href='https://www.kantipurdaily.com' + n.link target='_blank')
+                h2=n.title
                 i=n.heading
                 br
+
+        .footer#footer
+            p
+                b 
+                    a(href='https://www.joneshshrestha.com' target = 'blank_') &copy; Jonesh Shrestha.
+                | &nbsp Made with ❤️ in Kathmandu.

@@ -18,7 +18,7 @@
 
 a {
     text-decoration: none;
-    color: #494949
+    color: black;
 }
 
 i {
@@ -26,8 +26,24 @@ i {
 }
 
 div {
-    width: 1230px;
-    padding: 10px;
-    border: 5px solid gray;
-    margin: 0;
+    width: 1240px;
+    padding: 0px 10px 15px 10px;
+    border: 1px solid #C4C4C4;
+    margin: 1px;
   }
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 99.75%;
+    padding: 0px 0px 0px 0px;
+    background-color: rgb(43, 43, 43);
+    color: rgb(235, 235, 235);
+    text-align: center;
+ }
+ 
+#footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
