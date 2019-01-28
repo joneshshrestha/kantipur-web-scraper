@@ -25,11 +25,21 @@ i {
     font-size: 18px;
 }
 
-div {
+/* div {
     width: 1240px;
     padding: 0px 10px 15px 10px;
     border: 1px solid #C4C4C4;
     margin: 1px;
+  } */
+
+  div {
+    max-width: 1240px;
+    padding: 0px 10px 15px 10px; 
+    width: 100%; 
+    position: relative; 
+    margin:0 auto; 
+    line-height: 1.4em; 
+    border: 1px solid #C4C4C4;
   }
 
 .footer {
