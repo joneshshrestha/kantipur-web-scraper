@@ -30,7 +30,7 @@ const getNews = (callback) => {
 }
 
 // const getNews = (callback) => {
-//     request('https://www.kantipurdaily.com/news', (error, response, html) => {
+//     request('https://www.kathmandupost.com/national', (error, response, html) => {
 //         if(!error && response.statusCode == 200) {
 //             const news = []
 //             const $ = cheerio.load(html)
