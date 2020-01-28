@@ -6,30 +6,30 @@ const express = require('express')
 const app = express()
 app.set('view engine', 'pug')
 
-// const getNews = (callback) => {
-//     request('https://ekantipur.com/news', (error, response, html) => {
-//         if(!error && response.statusCode == 200) {
-//             const news = []
-//             const $ = cheerio.load(html)
-
-//             $('.teaser.offset').each((i, el) => {
-//                 const title = $(el)
-//                     .find('h2')
-//                     .text()
-//                 const link = $(el)
-//                     .find('a')
-//                     .attr('href')
-//                 const heading = $(el)
-//                     .find('p')
-//                     .text()
-//                 news.push({ title, link, heading })
-//             })
-//             callback(news)
-//         }
-//     })
-// }
-
 const getNews = (callback) => {
+    request('https://ekantipur.com/news', (error, response, html) => {
+        if(!error && response.statusCode == 200) {
+            const news = []
+            const $ = cheerio.load(html)
+
+            $('.teaser.offset').each((i, el) => {
+                const title = $(el)
+                    .find('h2')
+                    .text()
+                const link = $(el)
+                    .find('a')
+                    .attr('href')
+                const heading = $(el)
+                    .find('p')
+                    .text()
+                news.push({ title, link, heading })
+            })
+            callback(news)
+        }
+    })
+}
+
+const getKPNews = (callback) => {
     request('https://kathmandupost.com/national', (error, response, html) => {
         if(!error && response.statusCode == 200) {
             const news = []
@@ -55,6 +55,14 @@ const getNews = (callback) => {
 app.get('/', (req, res) => {
     getNews(news => {
         res.render('index', {
+            news 
+        })
+    })
+})
+
+app.get('/kathmandupost', (req, res) => {
+    getKPNews(news => {
+        res.render('kathmandupost', {
             news 
         })
     })
