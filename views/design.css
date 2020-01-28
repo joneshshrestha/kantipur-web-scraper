@@ -80,13 +80,12 @@ li a {
 	height: 150px;
 	width: 550px;
 	border-radius: 40px;
-	text-align: center;
+    text-align: center;
 	font-size: 50px;
 	font-weight: bold;
 	text-decoration: none;	
     padding-top: 100px;
     padding-left: 50px; 
-    
 	display: table-cell;
 }
 
