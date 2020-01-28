@@ -8,13 +8,13 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Kantipur
     body
-        ul
-            
-                    a(href='#') कान्तिपुर&nbsp;
-
-                    a(class="kathmanduPost" href='#') &nbsp;The&nbsp;Kathmandu&nbsp;Post
-        br
-        br
+        ul#nav
+        h1(align='center') कान्तिपुर समाचार अप्डेट
+        for n in news
+            div: a(href='https://www.kantipurdaily.com' + n.link target='_blank')
+                h2=n.title
+                i=n.heading
+                br
 
         .footer#footer
             p

@@ -32,7 +32,7 @@ const getNews = (callback) => {
 const getKPNews = (callback) => {
     request('https://kathmandupost.com/national', (error, response, html) => {
         if(!error && response.statusCode == 200) {
-            const news = []
+            const KPnews = []
             const $ = cheerio.load(html)
 
             $('.article-image').each((i, el) => {
@@ -45,9 +45,9 @@ const getKPNews = (callback) => {
                 const heading = $(el)
                     .find('p')
                     .text()
-                news.push({ title, link, heading })
+                KPnews.push({ title, link, heading })
             })
-            callback(news)
+            callback(KPnews)
         }
     })
 }
@@ -60,10 +60,18 @@ app.get('/', (req, res) => {
     })
 })
 
-app.get('/kathmandupost', (req, res) => {
-    getKPNews(news => {
-        res.render('kathmandupost', {
+app.get('/kantipur', (req, res) => {
+    getNews(news => {
+        res.render('kantipur', {
             news 
+        })
+    })
+})
+
+app.get('/kathmandupost', (req, res) => {
+    getKPNews(KPnews => {
+        res.render('kathmandupost', {
+            KPnews 
         })
     })
 })
