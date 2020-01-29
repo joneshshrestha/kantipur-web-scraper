@@ -36,11 +36,11 @@ div {
 }
 
 div h2 {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 div i {
-    line-height: 20px;
+  line-height: 20px;
 }
 
 .footer {
@@ -59,28 +59,30 @@ div i {
 }
 
 .flex-container {
-    text-align: center;
-    padding-top: 210px;
-    padding-bottom: 210px;
+  text-align: center;
+  padding-top: 210px;
+  padding-bottom: 210px;
 }
 
 .button {
-    display: inline-block;
-    padding: 30px 50px;
-    font-size: 24px;
-    margin: 10px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: rgb(90, 85, 167);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px #999;
-  }
+  display: inline-block;
+  padding: 30px 50px;
+  font-size: 24px;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(90, 85, 167);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
 
-.button:hover {background-color: #35347e}
+.button:hover {
+  background-color: #35347e;
+}
 
 .button:active {
   background-color: #35347e;
