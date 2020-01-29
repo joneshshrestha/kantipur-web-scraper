@@ -45,7 +45,10 @@ const getKPNews = (callback) => {
                 const heading = $(el)
                     .find('p')
                     .text()
-                KPnews.push({ title, link, heading })
+                if ( !this.title) {
+                    console.log(this.title)
+                    KPnews.push({ title, link, heading })
+                }
             })
             callback(KPnews)
         }
@@ -55,7 +58,6 @@ const getKPNews = (callback) => {
 app.get('/', (req, res) => {
     getNews(news => {
         res.render('index', {
-            news 
         })
     })
 })
