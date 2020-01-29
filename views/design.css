@@ -63,15 +63,15 @@ i {
 
 
 /* homepage style */
-ul {
+/* ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-}
+} */
 
 ul li {
     display:inline-block;
-    padding-left: 300px;
+    padding-left: 10px;
 }
 
 li a {
