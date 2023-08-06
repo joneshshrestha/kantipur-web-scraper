@@ -66,6 +66,6 @@ app.get('/kathmandupost', (req, res) => {
   })
 })
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('Listening at port')
 })
