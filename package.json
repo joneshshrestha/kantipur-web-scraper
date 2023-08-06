@@ -4,6 +4,7 @@
   "description": "",
   "main": "scrape1.js",
   "scripts": {
+    "start": "node scrape1.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
