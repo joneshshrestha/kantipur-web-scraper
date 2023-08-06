@@ -1,12 +1,10 @@
+const pug = require('pug')
 const request = require('request')
 const cheerio = require('cheerio')
 const express = require('express')
-const serverless = require('serverless-http')
 
 const app = express()
 app.set('view engine', 'pug')
-
-const router = express.Router()
 
 const getNews = (callback) => {
   request('https://ekantipur.com/news', (error, response, html) => {
@@ -67,11 +65,6 @@ app.get('/kathmandupost', (req, res) => {
     })
   })
 })
-
-app.use(`/.netlify/functions/api`, router)
-
-module.exports = app
-module.exports.handler = serverless(app)
 
 // app.listen(process.env.PORT || 3000, () => {
 //   console.log('Listening at port')
