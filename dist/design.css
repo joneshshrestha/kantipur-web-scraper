@@ -1,0 +1,91 @@
+#nav {
+  width: 40px;
+  margin: 10 auto;
+  list-style: none;
+}
+#nav li {
+  float: left;
+}
+#nav a {
+  display: block;
+  text-align: center;
+  width: 150px; /* fixed width */
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 900;
+  color: brown;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  font-size: 18px;
+}
+
+div {
+  max-width: 1300px;
+  padding: 0px 10px 15px 10px;
+  width: 94.5%;
+  position: static;
+  margin: 0 auto;
+  line-height: 1.2em;
+  border: 1px solid #c4c4c4;
+}
+
+div h2 {
+  line-height: 30px;
+}
+
+div i {
+  line-height: 20px;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0px;
+  width: 94.7%;
+  background-color: rgb(43, 43, 43);
+  color: rgb(235, 235, 235);
+  text-align: center;
+}
+
+#footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.flex-container {
+  text-align: center;
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
+
+.button {
+  display: inline-block;
+  padding: 30px 50px;
+  font-size: 24px;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(90, 85, 167);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.button:hover {
+  background-color: #35347e;
+}
+
+.button:active {
+  background-color: #35347e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
