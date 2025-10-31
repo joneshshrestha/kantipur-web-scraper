@@ -1,4 +1,4 @@
-# [Kantipur News](https://kantipur.herokuapp.com/)
+# [Kantipur News](https://kantipur-app.fly.dev)
 
 Web Scraping With Node.js &amp; Cheerio
 
